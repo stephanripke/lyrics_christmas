@@ -1,0 +1,601 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hierarchical Expandable List</title>
+    <style>
+        ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+        li {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+            position: relative;
+            color: blue;
+            font-weight: bold;
+            font-size: 1.2em; /
+
+        }
+        .nested-list {
+            color: black;
+            display: block;
+            margin-top: 10px;
+        }
+        .details {
+            display: none;
+            margin-top: 5px;
+            font-size: 0.9em;
+            color: #555;
+        }
+        .nested-list li {
+            border: 1px solid #aaa;
+            color: black;
+            font-size: 0.8em; /* Smaller font size for the second hierarchy */
+        }
+        pre {
+    	    font-family: "Open Sans", sans-serif;
+            font-size: 1.15em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lyrics, learned by November 2024</h1>
+
+    <ul>
+
+
+<h2>N_cards = 13</h2><h2>Sorted by artist (N = 1)</h2>
+
+        <li onclick="toggleDetails(this)">
+            Weihnachten (13)
+<!--            <div class="details">Here all songs to this Artist</div>    -->
+            <ul class="nested-list">
+
+		<li onclick="toggleDetails(this)">Vom Himmel hoch da komm ich her	
+                    <div class="details">
+                       <pre><a href=https://open.spotify.com/track/5qqFekQNPfaBkG9N972ucX?si=e78e9dbbd12344ad>https://open.spotify.com/track/5qqFekQNPfaBkG9N972ucX?si=e78e9dbbd12344ad</a>
+
+Artist: Weihnachten
+
+(chards nicht gefestig)
+I   V    IV   V     ii    V    I    vi    ii    V    I 
+ii    iii    IV     V
+IV    iiii     ii    V    I  
+
+„1. Vom Himmel hoch, da komm ich her.
+Ich bring’ euch gute neue <a href=https://de.wikipedia.org/wiki/M%C3%A4r>Mär</a>,
+Der guten Mär bring ich so viel,
+Davon ich singn und sagen will.
+
+2. Euch ist ein Kindlein heut’ geborn
+Von einer Jungfrau auserkorn,
+Ein Kindelein, so zart und fein,
+Das soll eu’r Freud und Wonne sein.
+
+3. Es ist der Herr Christ, unser Gott,
+Der will euch führn aus aller Not,
+Er will eu’r Heiland selber sein,
+Von allen Sünden machen rein.	 
+</pre>
+                    </div>
+                </li>
+
+
+		<li onclick="toggleDetails(this)">Lasst und froh und munter sein	
+                    <div class="details">
+                       <pre><a href=https://open.spotify.com/track/6GbPziAWs8oJQdzPTddrBS?si=538969de30644dab>https://open.spotify.com/track/6GbPziAWs8oJQdzPTddrBS?si=538969de30644dab</a>
+
+Artist: Weihnachten
+
+I      V     I
+V
+I   V  I  V   I
+I       V      I   V   I  (2x)
+
+
+Laßt uns froh und munter sein
+Und uns recht von Herzen freu'n.
+Lustig, lustig, tralalalala,
+Bald ist Niklausabend da,
+Bald ist Niklausabend da!
+
+
+Bald ist uns're Schule aus,
+Dann zieh'n wir vergnügt nach Haus.
+Lustig, lustig, tralalalala,
+Bald ist Niklausabend da,
+Bald ist Niklausabend da!
+
+
+Dann stell ich den Teller auf,
+Niklaus legt gewiß was drauf,
+Lustig, lustig, tralalalala,
+Bald ist Niklausabend da,
+Bald ist Niklausabend da!
+	 
+</pre>
+                    </div>
+                </li>
+
+
+		<li onclick="toggleDetails(this)">Kling Gloeckchen Klingelingelin	
+                    <div class="details">
+                       <pre><a href=https://open.spotify.com/track/2buC4xEl0B4qXtrSyw4NGL?si=c078d5772c464d53>https://open.spotify.com/track/2buC4xEl0B4qXtrSyw4NGL?si=c078d5772c464d53</a>
+
+Artist: Weihnachten
+
+I        V         I
+V  I    I    V    V       V   I 
+V(V)     V     V(V(V)    V(V)    V
+I       V         I
+
+
+Kling, Glöckchen, Klingelingeling
+Kling, Glöckchen Kling
+Laßt mich ein ihr Kinder
+S'ist so kalt der Winter
+Öffnet mir die Türen
+Lasst mich nicht erfrieren!
+Kling, Glöckchen, Klingelingeling
+Kling, Glöckchen Kling
+
+
+Kling, Glöckchen, Klingelingeling
+Kling, Glöckchen Kling
+Mädchen hört und Bübchen
+Macht mir auf das Stübchen
+Bring euch viele Gaben
+Sollt Euch dran erlaben!
+Kling, Glöckchen, Klingelingeling
+Kling, Glöckchen Kling
+
+
+Kling, Glöckchen, Klingelingeling
+Kling, Glöckchen Kling
+Hell erglühn die Kerzen
+Öffnet mir die Herzen
+Will drin wohnen fröhlich
+Frommes Kind wie selig
+Kling, Glöckchen, Klingelingeling
+Kling, Glöckchen Kling	 
+</pre>
+                    </div>
+                </li>
+
+
+		<li onclick="toggleDetails(this)">Schneeflöckchen, Weißröckchen	
+                    <div class="details">
+                       <pre><a href=https://open.spotify.com/track/0hQLdCxNtU5aMHxjI3q0vy?si=6bd70526a9e44ff4>https://open.spotify.com/track/0hQLdCxNtU5aMHxjI3q0vy?si=6bd70526a9e44ff4</a>
+
+Artist: Weihnachten
+
+I      V     V-7     I      I      IV     V-7    I
+
+
+Schneeflöckchen, Weißröckchen
+Wann kommst du geschneit
+Du kommst aus den Wolken
+Dein Weg ist so weit
+Komm setz dich ans Fenster
+Du lieblicher Stern
+Malst Blumen und Blätter
+Wir haben dich gern
+Schneeflöckchen, du deckst uns
+Die Blümelein zu
+Dann schlafen sie sicher in himmlischer Ruh	 
+</pre>
+                    </div>
+                </li>
+
+
+		<li onclick="toggleDetails(this)">Leise rieselt der Schnee	
+                    <div class="details">
+                       <pre><a href=https://open.spotify.com/track/0hQLdCxNtU5aMHxjI3q0vy?si=35f596674725430c>https://open.spotify.com/track/0hQLdCxNtU5aMHxjI3q0vy?si=35f596674725430c</a>
+
+Artist: Weihnachten
+
+I    V     I      I-7
+IV                I
+V       V(vi)    vi
+ii        V       I
+
+Leise rieselt der Schnee,
+Still und starr liegt der See,
+Weihnachtlich glänzet der Wald:
+Freue Dich, Christkind kommt bald.
+
+In den Herzen ist’s warm,
+Still schweigt Kummer und Harm,
+Sorge des Lebens verhallt:
+Freue Dich, Christkind kommt bald.
+
+Bald ist heilige Nacht;
+Chor der Engel erwacht;
+Horch’ nur, wie lieblich es schallt:
+Freue Dich, Christkind kommt bald.
+	 
+</pre>
+                    </div>
+                </li>
+
+
+		<li onclick="toggleDetails(this)">Oh Tannenbaum	
+                    <div class="details">
+                       <pre><a href=https://open.spotify.com/track/24zCWIsjWldVBMPOSYMEtJ>https://open.spotify.com/track/24zCWIsjWldVBMPOSYMEtJ</a>
+
+Artist: Weihnachten
+
+V   I    V    I   ii      V     I
+IV     V     V     I
+(1. zeile again)  
+
+O Tannenbaum, o Tannenbaum!
+Wie treu <a href=https://de.wikipedia.org/wiki/O_Tannenbaum#annotationpair-1-*)-0><sup>*)</sup></a> sind deine Blätter;
+du grünst nicht nur zur Sommerzeit,
+nein, auch im Winter, wenn es schneit.
+O Tannenbaum, o Tannenbaum,
+wie treu sind deine Blätter.
+
+O Tannenbaum, o Tannenbaum,
+du kannst mir sehr gefallen;
+wie oft hat nicht zur Weihnachtszeit
+ein Baum von dir mich hoch erfreut.
+O Tannenbaum, o Tannenbaum,
+du kannst mir sehr gefallen.
+
+O Tannenbaum, o Tannenbaum,
+dein Kleid will mir was lehren:
+die Hoffnung und Beständigkeit
+giebt Trost und Kraft zu jeder Zeit!
+O Tannenbaum, o Tannenbaum,
+dein Kleid will mir was lehren.	 
+</pre>
+                    </div>
+                </li>
+
+
+		<li onclick="toggleDetails(this)">Süsser die Glocken nie klingen	
+                    <div class="details">
+                       <pre><a href=https://open.spotify.com/track/7pLXhItyp9cczSNnQksNXH?si=0eb2d1b16d9f431a>https://open.spotify.com/track/7pLXhItyp9cczSNnQksNXH?si=0eb2d1b16d9f431a</a>
+
+Artist: Weihnachten
+
+I      V     V         I
+I      IV     I    V   I
+V       I      V     I 
+C      IV    I   V   I     
+
+Süßer die Glocken nie klingen,
+Als zu der Weihnachtszeit,
+Ist, als ob Engelein singen
+Wieder von Frieden und Freud’,
+𝄆 Wie sie gesungen in seliger Nacht! 𝄇
+Glocken mit heiligem Klang,
+Klingt doch die Erde entlang!
+
+O wenn die Glocken erklingen,
+Schnell sie das Christkindlein hört:
+Thut sich vom Himmel dann schwingen,
+Eilet hernieder zur Erd’.
+𝄆 Segnet den Vater, die Mutter, das Kind; 𝄇
+Glocken mit heiligem Klang,
+Klingt doch die Erde entlang!
+
+Klinget mit lieblichem Schalle
+Ueber die Meere noch weit,
+Daß sich erfreuen doch Alle
+Seliger Weihnachtszeit,
+𝄆 Alle aufjauchzen mit einem Gesang! 𝄇
+Glocken mit heiligem Klang,
+Klingt doch die Erde entlang!
+	 
+</pre>
+                    </div>
+                </li>
+
+
+		<li onclick="toggleDetails(this)">Ihr Kinderlein kommet	
+                    <div class="details">
+                       <pre><a href=https://open.spotify.com/track/1zQsQ9uTIsi0wBg2XnQtx0>https://open.spotify.com/track/1zQsQ9uTIsi0wBg2XnQtx0</a>
+
+Artist: Weihnachten
+
+I       V     I    (x2)
+V      I     IV
+I       V    I   
+
+1. Ihr Kinderlein, kommet, o kommet doch all!
+Zur Krippe her kommet in <a href=https://de.wikipedia.org/wiki/Betlehem>Betlehems</a> Stall
+und seht, was in dieser hochheiligen Nacht
+der Vater im Himmel für Freude uns macht!
+
+2. O seht in der Krippe, im nächtlichen Stall,
+seht hier bei des Lichtleins hellglänzendem Strahl,
+den lieblichen Knaben, <a href=https://de.wikipedia.org/wiki/Jesuskind>das himmlische Kind</a>,
+viel schöner und holder, als Engelein sind.
+
+3. Da liegt es, das Kindlein, auf Heu und auf Stroh,
+<a href=https://de.wikipedia.org/wiki/Maria_(Mutter_Jesu)>Maria</a> und <a href=https://de.wikipedia.org/wiki/Josef_von_Nazaret>Josef</a> betrachten es froh;
+die redlichen Hirten knien betend davor,
+hoch oben schwebt jubelnd der Engelein Chor.	 
+</pre>
+                    </div>
+                </li>
+
+
+		<li onclick="toggleDetails(this)">Alle Jahre wieder	
+                    <div class="details">
+                       <pre><a href=https://open.spotify.com/track/1yJbPa4rqnLLSZudeeWrDa?si=b73f1e9602d0491e>https://open.spotify.com/track/1yJbPa4rqnLLSZudeeWrDa?si=b73f1e9602d0491e</a>
+
+Artist: Weihnachten
+
+I    V    I    V
+I     IV      I      V
+I      IV   I    IV        
+I      V      I
+
+
+Alle Jahre wieder
+Kommt das Christuskind
+Auf die Erde nieder
+Wo wir Menschen sind
+
+
+Kehrt mit seinem Segen
+Ein in jedes Haus
+Geht auf allen Wegen
+Mit uns ein und aus
+
+
+Steht auch mir zur Seite
+Still und unerkannt
+Dass es treu mich leite
+An der lieben Hand
+
+	 
+</pre>
+                    </div>
+                </li>
+
+
+		<li onclick="toggleDetails(this)">Stille Nacht Heilige Nacht	
+                    <div class="details">
+                       <pre><a href=https://open.spotify.com/track/1q3DtEIiuxvmCPj6hntuth?si=a2e88a10e1c544c7>https://open.spotify.com/track/1q3DtEIiuxvmCPj6hntuth?si=a2e88a10e1c544c7</a>
+
+Artist: Weihnachten
+
+I                 V         I
+IV       I     IV         I
+V              I          vi
+I               V          I
+
+<strong>1.</strong> Stille Nacht, heilige Nacht! 
+Alles schläft, einsam wacht 
+nur das traute hochheilige Paar, 
+holder Knabe im lockigen Haar, 
+schlafe in himmlischer Ruh, 
+schlafe in himmlischer Ruh!
+
+<strong>2.</strong> Stille Nacht, heilige Nacht! 
+Gottes Sohn, o wie lacht 
+Lieb' aus deinem göttlichen Mund, 
+da uns schlägt die rettende Stund, 
+Jesus in deiner Geburt, 
+Jesus in deiner Geburt!
+
+<strong>3.</strong> Stille Nacht, heilige Nacht! 
+Hirten erst kundgemacht 
+durch der Engel Alleluja, 
+tönt es laut von ferne und nah: 
+Jesus, der Retter ist da, 
+Jesus, der Retter ist da!	 
+</pre>
+                    </div>
+                </li>
+
+
+		<li onclick="toggleDetails(this)">O du Fröhliche	
+                    <div class="details">
+                       <pre><a href=https://open.spotify.com/track/0H19jhub6EZXkhJpzZklDh?si=4bcc8099fe3c4cfc>https://open.spotify.com/track/0H19jhub6EZXkhJpzZklDh?si=4bcc8099fe3c4cfc</a>
+
+Artist: Weihnachten
+
+I     IV     I    (2x)
+I    V     V(V)    V    vi    V   V(V)      V
+V      V-7
+I
+vi  iii   IV   I    IV   V(ii)   ii    V    I
+
+O du fröliche, o du selige,
+gnadenbringende Weihnachtszeit!
+Welt ging verloren, Christ ist geboren:
+Freue, freue dich, Christenheit!
+
+O du fröliche, o du selige,
+gnadenbringende Osterzeit!
+Welt liegt in Banden, Christ ist erstanden:
+Freue, freue dich, Christenheit!
+
+O du fröliche, o du selige,
+gnadenbringende Pfingstenzeit!
+Christ, unser Meister, heiligt die Geister:
+Freue, freue dich, Christenheit!
+	 
+</pre>
+                    </div>
+                </li>
+
+
+		<li onclick="toggleDetails(this)">Jingle Bells	
+                    <div class="details">
+                       <pre><a href=https://open.spotify.com/track/4KV9bM7a1KDc7b7OakFZic>https://open.spotify.com/track/4KV9bM7a1KDc7b7OakFZic</a>
+
+Artist: Weihnachten
+
+v: I          IV            ii      V       I   
+ref:  
+I         IV       I
+IV       I         V(V)         V
+I         IV       I
+IV       I         V              I
+
+Dashing through the snow
+In a one-horse open sleigh
+O'er the fields we go
+Laughing all the way
+Bells on <a href=https://en.wikipedia.org/wiki/Docking_(animal)>bob tail</a> [<i><a href=https://en.wikipedia.org/wiki/Sic>sic</a></i>] ring
+Making spirits bright
+What fun it is to ride and sing
+A sleighing song tonight!
+
+Oh! Jingle bells, jingle bells,
+Jingle all the way.
+Oh! what fun it is to ride
+In a one-horse open sleigh. Hey!
+Jingle bells, jingle bells,
+Jingle all the way;
+Oh! what fun it is to ride
+In a one-horse open sleigh.
+
+A day or two ago
+I thought I'd take a ride
+And soon, Miss Fanny Bright
+Was seated by my side,
+The horse was lean and lank
+Misfortune seemed his lot
+He got into a drifted bank
+And then we got upsot.<sup><a href=https://en.wikipedia.org/wiki/Jingle_Bells#cite_note-19>[a]</a></sup>
+
+[ref]
+
+A day or two ago,
+The story I must tell
+I went out on the snow,
+And on my back I fell;
+A gent was riding by
+In a one-horse open sleigh,
+He laughed as there I sprawling lie,
+But quickly drove away. Ah!
+
+[ref]
+
+Now the ground is white
+Go it while you're young,
+Take the girls tonight
+and sing this sleighing song;
+Just get a bobtailed <a href=https://en.wikipedia.org/wiki/Bay_(horse)>bay</a>
+Two forty as his speed<sup><a href=https://en.wikipedia.org/wiki/Jingle_Bells#cite_note-20>[b]</a></sup>
+Hitch him to an open sleigh
+And snap! You'll take the lead.	 
+</pre>
+                    </div>
+                </li>
+
+
+		<li onclick="toggleDetails(this)">Rudolph the Red-Nosed Reindeer	
+                    <div class="details">
+                       <pre><a href=https://open.spotify.com/track/2L9QLAhrvtP4EYg1lY0Tnw>https://open.spotify.com/track/2L9QLAhrvtP4EYg1lY0Tnw</a>
+
+Artist: Weihnachten
+
+v.: 
+ref:     
+I          V       V         I   (2x)
+IV       I         ii     V    I
+V       V(V)     V
+
+
+You know Dasher and Dancer and Prancer and Vixen
+Comet and Cupid and Donner and Blitzen
+But do you recall
+The most famous reindeer of all?
+
+
+Rudolph the Red-Nosed Reindeer
+Had a very shiny nose
+And if you ever saw it
+You would even say it glows
+
+
+All of the other reindeer
+Used to laugh and call him names
+They never let poor Rudolph
+Join in any reindeer games
+
+
+Then one foggy Christmas Eve
+Santa came to say
+Rudolph, with your nose so bright
+Won't you guide my sleigh tonight?
+
+
+Then how the reindeer loved him
+As they shouted out with glee
+Rudolph the Red-Nosed Reindeer
+You'll go down in history
+
+
+Rudolph the Red-Nosed Reindeer
+Had a very shiny nose
+And if you ever saw it
+You would even say it glows
+
+
+All of the other reindeer
+Used to laugh and call him names
+They never let poor Rudolph
+Join in any reindeer games
+
+
+Then one foggy Christmas Eve
+Santa came to say
+Rudolph, with your nose so bright
+Won't you guide my sleigh tonight?
+
+
+Then how the reindeer loved him
+As they shouted out with glee
+Rudolph the Red-Nosed Reindeer
+You'll go down in history
+	 
+</pre>
+                    </div>
+                </li>
+
+
+            </ul>
+        </li>
+
+
+    </ul>
+
+    <script>
+
+
+        function toggleDetails(listItem) {
+            const details = listItem.querySelector('.details');
+            if (details && (details.style.display === 'none' || details.style.display === '')) {
+                details.style.display = 'block';
+            } else if (details) {
+                details.style.display = 'none';
+            }
+
+            const nestedList = listItem.querySelector('.nested-list');
+            if (nestedList && (nestedList.style.display === 'none' || nestedList.style.display === '')) {
+                nestedList.style.display = 'block';
+            } else if (nestedList) {
+                nestedList.style.display = 'block';
+            }
+
+            // Prevent event propagation to parent list items
+            event.stopPropagation();
+        }
+    </script>
+</body>
+</html>
